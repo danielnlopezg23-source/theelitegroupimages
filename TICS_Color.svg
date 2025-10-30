@@ -3,24 +3,23 @@
   <!-- Fondo transparente -->
   <rect width="512" height="512" fill="none"/>
 
-  <!-- Ícono: Nodo + Arcos de flujo -->
+  <!-- Grupo principal (centrado) -->
   <g transform="translate(256, 256)">
-    <!-- Nodo central -->
-    <circle cx="0" cy="0" r="50" fill="#545386"/>
-    
-    <!-- Arcos de flujo (3 niveles, unidireccional) -->
-    <path d="M 0 -80 A 80 80 0 0 1 56.57 -56.57" fill="none" stroke="#545386" stroke-width="20" stroke-linecap="round" opacity="0.8"/>
-    <path d="M 0 -110 A 110 110 0 0 1 77.78 -77.78" fill="none" stroke="#545386" stroke-width="18" stroke-linecap="round" opacity="0.5"/>
-    <path d="M 0 -140 A 140 140 0 0 1 98.99 -98.99" fill="none" stroke="#545386" stroke-width="16" stroke-linecap="round" opacity="0.3"/>
+    <!-- Nodo central (tecnología) -->
+    <circle cx="0" cy="0" r="40" fill="#545386"/>
+
+    <!-- Pétalos/ondas (horticultura + comunicación) -->
+    <!-- Pétalo 1 (arriba) -->
+    <path d="M0 -100 C20 -140, 60 -140, 80 -100 C60 -60, 20 -60, 0 -100" fill="#C2DFEA" stroke="#545386" stroke-width="6"/>
+    <!-- Pétalo 2 (derecha) -->
+    <path d="M100 0 C140 -20, 140 -60, 100 -80 C60 -60, 60 -20, 100 0" fill="#D8D2C4" stroke="#545386" stroke-width="6" transform="rotate(90)"/>
+    <!-- Pétalo 3 (abajo) -->
+    <path d="M0 100 C-20 140, -60 140, -80 100 C-60 60, -20 60, 0 100" fill="#C2DFEA" stroke="#545386" stroke-width="6" transform="rotate(180)"/>
+    <!-- Pétalo 4 (izquierda) -->
+    <path d="M-100 0 C-140 20, -140 60, -100 80 C-60 60, -60 20, -100 0" fill="#D8D2C4" stroke="#545386" stroke-width="6" transform="rotate(270)"/>
+
+    <!-- Ondas de comunicación (flujo unidireccional) -->
+    <path d="M0 -120 A120 120 0 0 1 84.85 -84.85" fill="none" stroke="#545386" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+    <path d="M0 -160 A160 160 0 0 1 113.14 -113.14" fill="none" stroke="#545386" stroke-width="10" stroke-linecap="round" opacity="0.4"/>
   </g>
-
-  <!-- Texto: TICS -->
-  <text x="256" y="360" font-family="Montserrat, sans-serif" font-weight="800" font-size="120" fill="#545386" text-anchor="middle" letter-spacing="-3">
-    TICS
-  </text>
-
-  <!-- Subtexto (opcional, pequeño) -->
-  <text x="256" y="400" font-family="Roboto, sans-serif" font-weight="500" font-size="26" fill="#888" text-anchor="middle">
-    Technology Information Communication System
-  </text>
 </svg>
