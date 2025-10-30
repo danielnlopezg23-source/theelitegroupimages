@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo (opcional, transparente) -->
+  <rect width="512" height="512" fill="none"/>
+
+  <!-- Ícono: Antena + Ondas -->
+  <g transform="translate(256, 256)">
+    <!-- Antena (línea vertical + punto superior) -->
+    <line x1="0" y1="80" x2="0" y2="-60" stroke="#545386" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="0" cy="-70" r="18" fill="#545386"/>
+
+    <!-- Ondas de señal (3 círculos concéntricos) -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#545386" stroke-width="16" opacity="0.3"/>
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#545386" stroke-width="16" opacity="0.2"/>
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#545386" stroke-width="16" opacity="0.1"/>
+  </g>
+
+  <!-- Texto: TICS -->
+  <text x="256" y="360" font-family="Montserrat, sans-serif" font-weight="800" font-size="120" fill="#545386" text-anchor="middle" letter-spacing="-2">
+    TICS
+  </text>
+
+  <!-- Subtexto opcional (pequeño) -->
+  <text x="256" y="400" font-family="Roboto, sans-serif" font-weight="500" font-size="28" fill="#888" text-anchor="middle" opacity="0.7">
+    Technology Information Communication System
+  </text>
+</svg>
