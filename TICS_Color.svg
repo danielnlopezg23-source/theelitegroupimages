@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <!-- Fondo (opcional, transparente) -->
+  <!-- Fondo transparente -->
   <rect width="512" height="512" fill="none"/>
 
-  <!-- Ícono: Antena + Ondas -->
+  <!-- Ícono: Nodo + Arcos de flujo -->
   <g transform="translate(256, 256)">
-    <!-- Antena (línea vertical + punto superior) -->
-    <line x1="0" y1="80" x2="0" y2="-60" stroke="#545386" stroke-width="28" stroke-linecap="round"/>
-    <circle cx="0" cy="-70" r="18" fill="#545386"/>
-
-    <!-- Ondas de señal (3 círculos concéntricos) -->
-    <circle cx="0" cy="0" r="100" fill="none" stroke="#545386" stroke-width="16" opacity="0.3"/>
-    <circle cx="0" cy="0" r="140" fill="none" stroke="#545386" stroke-width="16" opacity="0.2"/>
-    <circle cx="0" cy="0" r="180" fill="none" stroke="#545386" stroke-width="16" opacity="0.1"/>
+    <!-- Nodo central -->
+    <circle cx="0" cy="0" r="50" fill="#545386"/>
+    
+    <!-- Arcos de flujo (3 niveles, unidireccional) -->
+    <path d="M 0 -80 A 80 80 0 0 1 56.57 -56.57" fill="none" stroke="#545386" stroke-width="20" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 0 -110 A 110 110 0 0 1 77.78 -77.78" fill="none" stroke="#545386" stroke-width="18" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 0 -140 A 140 140 0 0 1 98.99 -98.99" fill="none" stroke="#545386" stroke-width="16" stroke-linecap="round" opacity="0.3"/>
   </g>
 
   <!-- Texto: TICS -->
-  <text x="256" y="360" font-family="Montserrat, sans-serif" font-weight="800" font-size="120" fill="#545386" text-anchor="middle" letter-spacing="-2">
+  <text x="256" y="360" font-family="Montserrat, sans-serif" font-weight="800" font-size="120" fill="#545386" text-anchor="middle" letter-spacing="-3">
     TICS
   </text>
 
-  <!-- Subtexto opcional (pequeño) -->
-  <text x="256" y="400" font-family="Roboto, sans-serif" font-weight="500" font-size="28" fill="#888" text-anchor="middle" opacity="0.7">
+  <!-- Subtexto (opcional, pequeño) -->
+  <text x="256" y="400" font-family="Roboto, sans-serif" font-weight="500" font-size="26" fill="#888" text-anchor="middle">
     Technology Information Communication System
   </text>
 </svg>
